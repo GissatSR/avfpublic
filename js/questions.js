@@ -24,4 +24,4 @@ fetch(apiUrl, {
 })
 .catch(error => {
     console.error('Error fetching Survey123 form data:', error);
-});
+})
