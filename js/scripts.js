@@ -5,11 +5,6 @@ var webform = new Survey123WebForm({
 
 webform.on("formLoaded", async (e) => {
     const urlParams = new URLSearchParams(window.location.search);
-    var webform = new Survey123WebForm({
-        clientId: "ABC1234567890",
-        container: "formDiv",
-        itemId: "204359b351b14a838f3bd368960a8d5b"
-     })
     // Set sales channel form-field
     if (urlParams.get("sales_channel") !== null) {
         webform.setQuestionValue({
@@ -30,6 +25,4 @@ webform.on("formLoaded", async (e) => {
             "agent_id_ip": urlParams.get("agent_id_ip")
         })
     }
-
-    console.log(webform)
 })
