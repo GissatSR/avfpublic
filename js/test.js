@@ -4,6 +4,6 @@ var webform = new Survey123WebForm({
 })
 
 webform.on("formLoaded", async (e) => {
-    let klantnummer = getQuestionValue('field_8');
+    let klantnummer = getQuestionValue();
     console.log(klantnummer);
 })
