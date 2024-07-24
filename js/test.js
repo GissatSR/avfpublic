@@ -3,5 +3,7 @@ var webform = new Survey123WebForm({
     itemId: "204359b351b14a838f3bd368960a8d5b" // The attached document explains where to find this
 })
 
-let klantnummer = document.getElementById('klantnummer').value;
-console.log(klantnummer);
+webform.on("formLoaded", async (e) => {
+    let klantnummer = getQuestionValue('klantnummer');
+    console.log(klantnummer);
+})
