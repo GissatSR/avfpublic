@@ -45,7 +45,7 @@ webform.onFormSubmitted: (data) => {
             const attachments = feature.attachments;
             console.log('Attachments:',attachments);
         });
-    };
+    }
 
 
 
