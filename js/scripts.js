@@ -3,6 +3,10 @@ var webform = new Survey123WebForm({
     itemId: "204359b351b14a838f3bd368960a8d5b", // The attached document explains where to find this
     onFormSubmitted: (data) => {
     console.log('Form submitted: ', data.surveyFeatureSet);
+        data.surveyFeatureSet.features.forEach(feature =>{
+            const attributes = feature.attributes;
+            console.log('Attributes:',attributes);
+        });
     }
 })
 
