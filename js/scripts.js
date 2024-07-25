@@ -9,6 +9,7 @@ var webform = new Survey123WebForm({
             data.surveyFeatureSet.features.forEach(feature =>{
                 const attributes = feature.attributes;
                 console.log('Attributes:',attributes);
+                console.log('Attributes:',attributes.length);
             });
         
             data.surveyFeatureSet.features.forEach(feature =>{
@@ -46,8 +47,3 @@ webform.on("formLoaded", async (e) => {
         })
     }
 });
-
-
-
-
-
