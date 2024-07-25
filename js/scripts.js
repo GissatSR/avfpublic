@@ -9,7 +9,7 @@ var webform = new Survey123WebForm({
             data.surveyFeatureSet.features.forEach(feature =>{
                 const attributes = feature.attributes;
                 console.log('Attributes:',attributes);
-                let count = Object.keys(attributes).length
+                let count = Object.keys(attributes).length;
                 console.log('Count:', count);
             });
         
