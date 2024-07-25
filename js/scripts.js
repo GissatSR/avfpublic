@@ -38,12 +38,12 @@ onFormSubmitted: (data) => {
     
         data.surveyFeatureSet.features.forEach(feature =>{
             const geometry = feature.geometry;
-            console.log('Geometry:'geometry);
+            console.log('Geometry:',geometry);
         });
 
             data.surveyFeatureSet.features.forEach(feature =>{
             const attachments = feature.attachments;
-            console.log('Attachments:'attachments);
+            console.log('Attachments:',attachments);
         });
     }
 
