@@ -28,7 +28,7 @@ webform.on("formLoaded", async (e) => {
 });
 
 //Getting Form data
-onFormSubmitted: (data) => {
+webform.onFormSubmitted: (data) => {
     console.log('Form submitted: ', data.surveyFeatureSet);
     
         data.surveyFeatureSet.features.forEach(feature =>{
